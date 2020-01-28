@@ -46,7 +46,7 @@ public class SquaresPanel extends JPanel {
     g2.translate(-0.5, -0.5);
     g2.setStroke(new BasicStroke((float)(1.0 / side)));
     AffineTransform at = new AffineTransform(1-L, -L, L, 1-L, 0.0, L);
-    for (int i = 0; i < 30; ++i) {
+    for (int i = 0; i < SQUARES; ++i) {
       g2.draw(square);
       square = at.createTransformedShape(square);
     }
